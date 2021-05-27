@@ -59,7 +59,7 @@ var createUser = function (req, res) { return __awaiter(void 0, void 0, void 0, 
             case 1:
                 user = _a.sent();
                 if (user)
-                    throw new utils_1.Exception("Users already exists with this email");
+                    throw new utils_1.Exception("Users already  exists with this email");
                 newUser = typeorm_1.getRepository(Users_1.Users).create(req.body);
                 return [4 /*yield*/, typeorm_1.getRepository(Users_1.Users).save(newUser)];
             case 2:

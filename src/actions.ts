@@ -14,7 +14,7 @@ export const createUser = async (req: Request, res:Response): Promise<Response> 
 	const userRepo = getRepository(Users)
 	// fetch for any user with this email
 	const user = await userRepo.findOne({ where: {email: req.body.email }})
-	if(user) throw new Exception("Users already exists with this email")
+	if(user) throw new Exception("Users already  exists with this email")
 
 	const newUser = getRepository(Users).create(req.body);  //Creo un usuario
 	const results = await getRepository(Users).save(newUser); //Grabo el nuevo usuario 
