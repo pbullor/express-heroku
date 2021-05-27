@@ -36,16 +36,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-exports.M1620343803142 = void 0;
-var M1620343803142 = /** @class */ (function () {
-    function M1620343803142() {
-        this.name = 'M1620343803142';
+exports.M1622132749408 = void 0;
+var M1622132749408 = /** @class */ (function () {
+    function M1622132749408() {
+        this.name = 'M1622132749408';
     }
-    M1620343803142.prototype.up = function (queryRunner) {
+    M1622132749408.prototype.up = function (queryRunner) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, queryRunner.query("CREATE TABLE \"profile\" (\"id\" SERIAL NOT NULL, \"firstname\" character varying NOT NULL, \"lastname\" character varying NOT NULL, \"email\" character varying NOT NULL, \"email_validated\" boolean, CONSTRAINT \"PK_3dd8bfc97e4a77c70971591bdcb\" PRIMARY KEY (\"id\"))")];
+                    case 0: return [4 /*yield*/, queryRunner.query("CREATE TABLE \"users\" (\"id\" SERIAL NOT NULL, \"first_name\" character varying NOT NULL, \"last_name\" character varying NOT NULL, \"email\" character varying NOT NULL, \"password\" character varying NOT NULL, CONSTRAINT \"UQ_97672ac88f789774dd47f7c8be3\" UNIQUE (\"email\"), CONSTRAINT \"PK_a3ffb1c0c8416b9fc6f907b7433\" PRIMARY KEY (\"id\"))")];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -53,11 +53,11 @@ var M1620343803142 = /** @class */ (function () {
             });
         });
     };
-    M1620343803142.prototype.down = function (queryRunner) {
+    M1622132749408.prototype.down = function (queryRunner) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, queryRunner.query("DROP TABLE \"profile\"")];
+                    case 0: return [4 /*yield*/, queryRunner.query("DROP TABLE \"users\"")];
                     case 1:
                         _a.sent();
                         return [2 /*return*/];
@@ -65,6 +65,6 @@ var M1620343803142 = /** @class */ (function () {
             });
         });
     };
-    return M1620343803142;
+    return M1622132749408;
 }());
-exports.M1620343803142 = M1620343803142;
+exports.M1622132749408 = M1622132749408;

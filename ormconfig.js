@@ -8,8 +8,8 @@ module.exports = {
 	entities: ["./dist/entities/*.js"],
 	logging: false,
     synchronize: process.env.NODE_ENV === 'development',
-    migrations: ["./dist/migrations/*.js"],
+    migrations: ["./src/migrations/*.js"],
     cli: {
-        "migrationsDir": "./dist/migrations"
+        "migrationsDir": "./src/migrations"
     }
 }
