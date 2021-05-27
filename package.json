@@ -46,7 +46,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development tsc-watch --project . --onSuccess 'nodemon ./dist/app.js'",
+    "start": " --project . --onSuccess 'nodemon ./dist/app.js'",
     "build": "rm -rf ./dist && tsc --project ./",
     "makemigrations": "typeorm migration:generate -n M && npm run build",
     "migrate": "typeorm migration:run"
