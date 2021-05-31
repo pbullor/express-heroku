@@ -11,6 +11,7 @@ module.exports = {
     migrations: ["./dist/migrations/*.js"],
     cli: {
         "migrationsDir": "./dist/migrations"
-    }
+    },
+    ssl: true
 }
 
