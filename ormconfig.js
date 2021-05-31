@@ -12,6 +12,9 @@ module.exports = {
     cli: {
         "migrationsDir": "./dist/migrations"
     },
-    ssl: true
-}
+    ssl:{
+        require: true,
+          rejectUnauthorized: false,
+        },
+ }
 
